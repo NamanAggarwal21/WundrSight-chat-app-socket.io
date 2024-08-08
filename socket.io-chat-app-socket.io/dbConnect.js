@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-// const uri = process.env.ATLASURI;
+const uri = process.env.MONGODB;
 
 // connect to MongoDB Atlas
-mongoose.connect("mongodb+srv://aggarwalnaman21:l64tnwultiKPolgk@cluster0.clm8nyl.mongodb.net/chatapp")
+mongoose.connect(uri)
 .then( () => console.log('Connected to MongoDB!'))
 .catch( err => console.log(err))
